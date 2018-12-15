@@ -7,6 +7,7 @@ const db = require('../db');
 /** A reservation for a party */
 
 class Reservation {
+  // The comments are a further to study to see if the constructor can be built to handle both object types
   constructor({ id, customerId, numGuests, startAt, notes }) {
     // arguments 0 is for the case where we passed in snake_case SQL result object
     this.id = id;
